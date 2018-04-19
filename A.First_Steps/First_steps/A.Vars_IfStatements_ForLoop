@@ -1,0 +1,63 @@
+Vars, if statements, for loop 
+
+/*
+//Using declaration of variables 
+
+var stringk : String 
+var number : Int 
+
+stringk = "Hello"
+number = 21
+
+
+print("\(stringk) my name is Pedro and I'm \(number)")
+*/
+
+
+/*
+//Not using declaration of variables 
+
+print("Not using declaration of variables")
+
+var stringk = "Hello"
+var number = 21 
+
+print("\(stringk) my name is Pedro and I'm \(number)")
+*/
+
+//var optionalName: String? = "John Appleseed"
+/*
+ the ? says that the var can or not be the type String, meaning that it can also be null
+ */
+
+/*
+ var optionalName: String? = "John Appleseed"
+ var greeting = "Hello!"
+ if let name = optionalName {
+    greeting = "Hello, \(name)"
+ }
+ 
+ This code creates a constant name, it equals it to the optionalName
+ var, all this in the if statement. This if statement simply checks
+ if the var exists.
+ */
+
+/*
+ Another way to handle optional values is to provide a default value using
+ the ?? operator. If the optional value is missing, the default value is
+ used instead.
+ 
+ let nickName: String? = nil
+ let fullName: String = "John Appleseed"
+ let informalGreeting = "Hi \(nickName ?? fullName)"
+ */
+
+/*
+ You can keep an index in a loop by using ..< to make a range of indexes.
+ 
+ var total = 0
+ for i in 0..<4 {
+    total += i
+ }
+ print(total)
+ */

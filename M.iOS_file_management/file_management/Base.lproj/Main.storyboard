@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="file_management" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivs-a9-Lw4">
+                                <rect key="frame" x="225" y="279" width="114" height="54"/>
+                                <state key="normal" title="View Dir Content"/>
+                                <connections>
+                                    <action selector="view_folder_content:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qfv-Ab-E2Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPH-RG-bNE">
+                                <rect key="frame" x="33" y="279" width="129" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="sCo-dP-yJ8"/>
+                                </constraints>
+                                <state key="normal" title="View File Content"/>
+                                <connections>
+                                    <action selector="view_file_content:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1F-Mz-u2U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWZ-YI-wMC">
+                                <rect key="frame" x="225" y="126" width="114" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="8Jh-5J-mPr"/>
+                                </constraints>
+                                <state key="normal" title="Delete_File"/>
+                                <connections>
+                                    <action selector="delete_file:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9N-VO-DpP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSt-7I-tDL">
+                                <rect key="frame" x="33" y="126" width="129" height="60"/>
+                                <state key="normal" title="Create_File"/>
+                                <connections>
+                                    <action selector="create_file:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tP2-Y4-f3Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YWZ-YI-wMC" firstAttribute="trailing" secondItem="Ivs-a9-Lw4" secondAttribute="trailing" id="23W-c6-HLe"/>
+                            <constraint firstItem="YWZ-YI-wMC" firstAttribute="leading" secondItem="vSt-7I-tDL" secondAttribute="trailing" constant="63" id="9Fz-u7-QIc"/>
+                            <constraint firstItem="vSt-7I-tDL" firstAttribute="leading" secondItem="EPH-RG-bNE" secondAttribute="leading" id="FBX-BE-pFl"/>
+                            <constraint firstItem="vSt-7I-tDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="K1Z-04-qht"/>
+                            <constraint firstItem="YWZ-YI-wMC" firstAttribute="leading" secondItem="Ivs-a9-Lw4" secondAttribute="leading" id="Lrw-9g-Op0"/>
+                            <constraint firstItem="vSt-7I-tDL" firstAttribute="baseline" secondItem="YWZ-YI-wMC" secondAttribute="firstBaseline" id="O95-Zf-5pr"/>
+                            <constraint firstItem="vSt-7I-tDL" firstAttribute="top" secondItem="YWZ-YI-wMC" secondAttribute="top" id="Uh5-aI-r46"/>
+                            <constraint firstItem="EPH-RG-bNE" firstAttribute="top" secondItem="vSt-7I-tDL" secondAttribute="bottom" constant="93" id="WLy-sy-eFg"/>
+                            <constraint firstItem="vSt-7I-tDL" firstAttribute="trailing" secondItem="EPH-RG-bNE" secondAttribute="trailing" id="eZD-Ww-nfM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWZ-YI-wMC" secondAttribute="trailing" constant="36" id="iEu-IL-beL"/>
+                            <constraint firstItem="EPH-RG-bNE" firstAttribute="baseline" secondItem="Ivs-a9-Lw4" secondAttribute="firstBaseline" id="jps-uO-Ucd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EPH-RG-bNE" secondAttribute="bottom" constant="334" id="mFp-Ms-BHo"/>
+                            <constraint firstItem="EPH-RG-bNE" firstAttribute="top" secondItem="Ivs-a9-Lw4" secondAttribute="top" id="rUQ-8t-aXv"/>
+                            <constraint firstItem="vSt-7I-tDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="xG3-ai-Mm0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
